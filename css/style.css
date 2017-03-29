@@ -1,0 +1,334 @@
+@font-face{
+	src: url('../fonts/HelveticaNeue.ttf');
+	font-family: 'halvetica';
+}
+*{
+	box-sizing: border-box;
+	color : #333;
+}
+ul,h1,h2,h3,p,li{
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+body{
+	border-top: 5px solid #000;
+	line-height: 25px;
+	font-family: 'halvetica',Arial,Geneva,sans-serif ;
+}
+.wrapper{
+	margin: 0 47px;
+}
+.clearfix:before,
+.clearfix:after{
+	display: table;
+  	content: " ";
+}
+.clearfix{
+	clear: both;
+}
+hr{
+	display: block;
+    height: 1px;
+    border: 0;
+    border-color: #E8E8E8;
+    border-top: 1px solid;
+    padding: 0; 
+}
+a{
+	color: #353535;
+	text-decoration: none;
+}	
+.left-col{
+	float: left;
+	width: 25%;
+	padding: 5px 15px 5px 0px;
+}
+.mid-col{
+	float: left;
+	width: 75%;
+	padding: 5px 0px 5px 15px;
+}
+.half-col{
+	float: left;
+	width: 50%;
+	padding: 30px 0px;
+}
+.pull-right{
+	float: right;
+}
+.input-box{
+	display: block;
+	border: 0;
+	background-color: #f4f4f4;
+	padding: 15px 10px;
+}
+
+.submit-btn{
+	display: block;
+}
+.input-grp{
+	width: 100%;
+	display: table;
+	position: relative;
+	border-collapse: separate;
+}
+.input-grp-addon{
+	width: 25%;
+	color:white;
+	display: table-cell;
+	width: 10px;
+	height: 10px;
+	padding: 6px 12px;
+	background-color: #333;
+}
+.input-grp-elt{
+	width: 100%;
+	display: table-cell;
+	border: 0;
+	background-color: #f4f4f4;
+	padding: 15px 10px;
+}
+/*topnav*/
+.topnav{
+	padding: 5px 0px;
+	border-bottom: 1px solid #ccc;
+}
+.topnav a{
+	padding: 10px;
+}
+ul.account-activities{
+	float: left;
+}
+ul.account-activities>li{
+	float: left;
+}
+ul.user-activities{
+	float: right;
+}
+ul.user-activities>li{
+	float: left;
+}
+/*topnav*/
+
+/*search box*/
+.search-box{
+	color: #333;
+	background-color: inherit;
+}
+.search-box:active,
+.search-box:focus{
+	outline: 0px;
+}
+input.search-box{
+	padding: 0px;
+}
+::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+  opacity: 1;
+}
+::-moz-placeholder { /* Firefox 19+ */
+  opacity: 1;
+}
+:-ms-input-placeholder { /* IE 10+ */
+  opacity: 1;
+}
+:-moz-placeholder { /* Firefox 18- */
+  opacity: 1;
+}
+/*search box*/
+
+/*title*/
+.title{
+	padding: 20px 0px;
+}
+.title .left-col h1 {
+	font-size: 45px;
+}
+.title h1{
+	margin: 30px 0px 36px 0px;
+}
+/*title*/
+
+/*main-container*/
+.main-container{
+	width: 100%;
+}
+/*main-container*/
+
+/*sidenav*/
+.nav-list{
+	padding: 0px;
+}
+.nav-list>li{
+	border-top: 1px solid #ccc;
+}
+.nav-list li a{
+	display: block;
+}
+.nav-list li{
+	cursor: pointer;
+	display: block;
+	padding: 12px 0px;
+	width: 100%;
+}
+.nav-list li.category.active,
+.nav-list li:hover{
+	background-color: #938383;
+}
+.nav-list>li:last-child {
+	border-bottom: 1px solid #ccc;
+} 
+ul.cat-list {
+    padding: 0 18px;
+    background-color: white;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+}
+ul.cat-list li:not(:first-child){
+	width: 100%;
+	border-top: 1px solid #ccc;
+}
+
+/*sociallink sprite*/
+ul.sociallinksprite{
+	margin : 0;
+	padding: 0;	
+}
+ul.sociallinksprite li {
+	background: url('../images/sociallinksprite.png') no-repeat;
+	height: 20px;
+	float: left;
+	margin: 20px 5px;
+}
+ul.sociallinksprite li a{
+	display: block;
+	text-indent: -99999%;
+}
+ul.sociallinksprite li:first-child{
+	margin-left: 0;
+}
+ul.sociallinksprite li.fb {
+	width: 20px;
+	background-position: 0 0;
+}
+ul.sociallinksprite li.twitter{
+	width: 20px;
+	background-position: -32px 0;
+}
+ul.sociallinksprite li.pintrest{
+	width: 20px;
+	background-position: -60px 0;
+}
+ul.sociallinksprite li.instagram{
+	width: 20px;
+	background-position: -90px 0;
+}
+ul.sociallinksprite li.youtube{
+	width: 20px;
+	background-position: -119px 0;
+}
+/*sociallink sprite*/
+/*sidenav*/
+
+/*main contents*/
+.content{
+	border-top: 1px solid #ccc;
+}
+
+/*content*/
+.path{
+	padding: 15px 0px;
+}
+.path span{
+	padding: 0px 10px;
+}
+.display-content h2{
+	margin: 10px 0px;
+}
+.form{
+	width: 31.12%;
+	padding: 10px 0px;
+}
+.form input{
+	width: 100%;
+	margin-bottom: 10px; 
+}
+.btn{
+	width: 100%;
+	color: white;
+	border: none;
+	background-color: #333;
+	padding: 8px 0px;
+}
+ul.account-help{
+	padding: 5px 0px;
+}
+ul.account-help>li{
+	padding: 10px 0px;
+}
+/*content*/
+
+/*main contents*/
+
+/*footer*/
+footer{
+	padding: 30px 0;
+}
+.footer-container{
+	border-top: 1px solid #ccc;
+	margin-bottom: 10px;
+	width: 100%;
+}
+.footer-container h3{
+	padding-bottom: 10px;
+}
+.footer-container ul,
+.footer-container p{
+	padding: 10px 0px;
+}
+
+
+/*footer strip*/
+.footer-strip{
+	padding: 38px 0px;
+}
+
+/*payment sprite*/
+ul.paymentsprite{
+	margin : 0;
+	padding: 0;	
+	zoom: 0.5;
+}
+ul.paymentsprite li {
+	background: url('../images/paymentsprite.png') no-repeat;
+	height: 38px;
+	float: left;
+	margin: 0px 10px;
+}
+ul.paymentsprite li.visa {
+	width: 53px;
+	background-position: 0 0;
+}
+ul.paymentsprite li.master{
+	width: 61px;
+	background-position: -71px 0;
+}
+ul.paymentsprite li.americanx{
+	width: 37px;
+	background-position: -149px 0;
+}
+ul.paymentsprite li.paypal{
+	width: 71px;
+	background-position: -204px 0;
+}
+ul.paymentsprite li.ninja{
+	width: 34px;
+	background-position: -292px 0;
+}
+ul.paymentsprite li.discover{
+	width: 102px;
+	background-position: -344px 0;
+}
+/*payment sprite*/
+/*footer*/
