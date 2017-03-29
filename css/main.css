@@ -42,10 +42,6 @@ hr {
 a{
 	color: #353535;
 	text-decoration: none;
-}	
-.left-col{
-	width: 100%;
-	padding: 5px 0px;
 }
 .mid-col{
 	width: 100%;
@@ -95,14 +91,11 @@ a{
 	padding: 15px 10px;
 }
 .btn{
-	color: white;
+	color: #fff;
 	border: none;
 	background-color: #333;
 	padding: 8px 0px;
-}
-.btn span{
-	font-size: 13px;
-	color : #fff;
+	font-size: 12px;
 }
 .add-to-cart-btn{
     padding: 7px 15px;
@@ -201,6 +194,7 @@ input.search-box{
 
 /*sidenav*/
 .sidenav{
+	width: 100%;
 	max-height: 0px;
 	text-align: center;
 	overflow: hidden;
@@ -211,6 +205,10 @@ input.search-box{
 }
 .fa-ico.open:before{
 	content: "\f00d";
+}
+span.accordian-list-item{
+	display: block;
+	padding: 12px 0px;
 }
 .nav-list{
 	padding: 0px;
@@ -225,19 +223,19 @@ input.search-box{
 	background-color: inherit;
 	cursor: pointer;
 	display: block;
-	padding: 12px 0px;
+	padding: 0px 0px;
 	width: 100%;
 }
 .nav-list li.category.active,
 .nav-list li:hover{
-	background-color: #B7AAAA;
+	background-color: #f4f4f4;
 }
 .nav-list li.category:before {
     content: '\002B';
     color: #777;
     font-weight: bold;
     float: right;
-    margin-right: 10px;
+    margin: 10px 10px 0px 0px;
 }
 .nav-list li.category.active:before {
     content: "\2212";
@@ -302,11 +300,11 @@ ul.sociallinksprite li.youtube{
 }
 
 /*content*/
-.path{
+.breadcrumb{
 	padding: 15px 0px;
 	text-align: center;
 }
-.path span{
+.breadcrumb span{
 	padding: 0px 10px;
 }
 .display-content h2{
@@ -459,7 +457,7 @@ ul.paymentsprite li.discover{
 .cart-btn{
 	font-size: 14px;
 }
-.btn span{
+.btn{
 	font-size: 14px;
 }
 /*top nav*/
@@ -554,6 +552,9 @@ ul.user-activities>li{
 	display: none;
 }
 .sidenav{
+	float: left;
+	padding: 5px 15px 0px 0px;
+	width: 25%;
 	max-height: initial;
 }
 li.mob-nav{
@@ -583,7 +584,7 @@ ul.cat-list li:not(:first-child){
 	width: 31.12%;
 }
 /*main content*/
-.path{
+.breadcrumb{
 	text-align: inherit;
 }
 .prod-snap{
