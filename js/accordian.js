@@ -7,9 +7,11 @@ var accordianExpand = function(accordian, accordianHeight){
 	var i;
 
 	for (i = 0; i < category.length; i++) {
+		
 	  category[i].onclick = function() {
+		console.log("clicked accordian");
 	    this.classList.toggle("active");
-	    var list = this.firstElementChild;
+	    var list = this.nextElementSibling;
 	    if (list.style.maxHeight){
 	      list.style.maxHeight = null;
 	    } else {
@@ -24,20 +26,19 @@ var mainaccordian = document.getElementsByClassName("accordian-toggler");
 var toggle="close";
 
 mainaccordian[0].onclick = function(){
+	console.log("clicked mainaccordian");
 	var icon = mainaccordian[0].firstElementChild;
 	icon.classList.toggle("open");
 
 	if(toggle == "close"){
-     var leftColumn = this.nextElementSibling;
-     accordian = leftColumn.firstElementChild;
+     var accordian = this.nextElementSibling;
      accordian.style.maxHeight = accordian.scrollHeight + "px";
 
       accordianExpand(accordian, accordian.scrollHeight);
 
       toggle = "open";
       } else{
-      	var leftColumn = this.nextElementSibling;
-	    var accordian = leftColumn.firstElementChild;
+      	var accordian = this.nextElementSibling;
      	accordian.style.maxHeight = null;
       	toggle = "close";
       }
