@@ -41,7 +41,7 @@ hr {
     padding: 0; 
 }
 .wrapper{
-	margin: 0 47px;
+	margin: 0 30px;
 }
 .clearfix:before,
 .clearfix:after{
@@ -108,7 +108,7 @@ a{
 	border: none;
 	background-color: #333;
 	padding: 8px 0px;
-	font-size: 12px;
+	font-size: 10px;
 }
 .add-to-cart-btn{
     padding: 7px 15px;
@@ -468,7 +468,9 @@ ul.paymentsprite li.discover{
 /*footer*/
 
 @media only screen and (min-width: 768px) {
-
+.wrapper{
+	margin: 0 45px;
+}
 .left-col{
 	float: left;
 	width: 25%;
