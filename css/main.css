@@ -563,6 +563,7 @@ ul.user-activities>li{
 	border : 0;
 }
 .title h1 {
+	display: inline-block;
 	margin: 30px 0px 36px 0px;
 }
 /*title*/
@@ -575,7 +576,7 @@ ul.user-activities>li{
 	float: left;
 	padding: 5px 15px 0px 0px;
 	width: 25%;
-	max-height: initial;
+	max-height: 100%;
 }
 li.mob-nav{
 	display: none;
