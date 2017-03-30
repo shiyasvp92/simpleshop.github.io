@@ -1,6 +1,16 @@
 @font-face{
-	src: uri('../fonts/HelveticaNeue.ttf');
+	src: url('../fonts/HelveticaNeue.ttf');
 	font-family: 'halvetica';
+}
+@font-face {
+    font-family: 'helveticaneue';
+    src: url('../fonts/helveticaneuethin-webfont.woff2') format('woff2'),
+         url('../fonts/helveticaneuethin-webfont.woff') format('woff'),
+         url('../fonts/helveticaneuethin-webfont.ttf') format('truetype'),
+         url('../fonts/helveticaneuethin-webfont.svg#helveticaneuethin') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
 }
 *{
 	-webkit-box-sizing: border-box;
@@ -17,7 +27,7 @@ ul,h1,h2,h3,p,li{
 body{
 	border-top: 5px solid #000;
 	line-height: 25px;
-	font-family: 'halvetica',Arial,Geneva,sans-serif ;
+	font-family: 'halvetica','helveticaneue',Arial,Geneva,sans-serif ;
 }
 img{
 	max-width: 100%;
@@ -31,7 +41,7 @@ hr {
     padding: 0; 
 }
 .wrapper{
-	margin: 0 30px;
+	margin: 0 47px;
 }
 .clearfix:before,
 .clearfix:after{
@@ -150,7 +160,7 @@ ul.account-activities>li>a{
 ul.user-activities>li>a{
 	display: none;
 }
-.cart-ico{
+.user-activities .cart-ico{
 	padding-right: 10px;
 }
 /*topnav*/
@@ -459,9 +469,6 @@ ul.paymentsprite li.discover{
 
 @media only screen and (min-width: 768px) {
 
-.wrapper{
-	margin: 0 45px;
-}
 .left-col{
 	float: left;
 	width: 25%;
