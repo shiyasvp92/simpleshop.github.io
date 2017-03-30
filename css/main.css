@@ -31,7 +31,7 @@ hr {
     padding: 0; 
 }
 .wrapper{
-	margin: 0 47px;
+	margin: 0 30px;
 }
 .clearfix:before,
 .clearfix:after{
@@ -459,6 +459,9 @@ ul.paymentsprite li.discover{
 
 @media only screen and (min-width: 768px) {
 
+.wrapper{
+	margin: 0 45px;
+}
 .left-col{
 	float: left;
 	width: 25%;
