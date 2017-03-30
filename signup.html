@@ -103,12 +103,16 @@
                         </div>
                         <section class="main-content">
                             <h2>Create Account</h2>
-                            <form name="createaccount" class="form">
-                                <input type="text" name="firstName" placeholder="First Name" class="input-box">
-                                <input type="text" name="lastName" placeholder="Last Name" class="input-box">
-                                <input type="email" name="email" placeholder="Email" class="input-box">
-                                <input type="password" name="password" placeholder="Password" class="input-box">
-                                <button class="btn">CREATE</button>
+                            <form name="createaccount" method="post" class="form" onsubmit="return validatesignup(this)">
+                                <input type="text" name="firstName" placeholder="First Name" onblur="isEmpty(this)" onkeyup="validatename(this)" class="input-box form-input">
+                                <div id="errormessage"></div>
+                                <input type="text" name="lastName" placeholder="Last Name" onclick="isPrevEmpty(this)" onblur="isEmpty(this)" onkeyup="validatename(this)" class="input-box form-input">
+                                <div id="errormessage"></div>
+                                <input type="email" name="email" placeholder="Email" onclick="isPrevEmpty(this)" onblur="isEmpty(this)" class="input-box form-input">
+                                <div id="errormessage"></div>
+                                <input type="password" name="password" placeholder="Password" onclick="isPrevEmpty(this)"  onkeyup="validatepassword(this)" class="input-box form-input">
+                                <div id="errormessage"></div>
+                                <button class="btn" type="submit">CREATE</button>
                             </form>
                         </section>
                     </div>
@@ -157,5 +161,6 @@
 
         </div>
         <script type="text/javascript" src="js/accordian.js"></script>
+        <script type="text/javascript" src="js/validator.js"></script>
     </body>
 </html>

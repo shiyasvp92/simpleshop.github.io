@@ -101,9 +101,11 @@
                         </div>
                         <section class="main-content">
                             <h2>Login</h2>
-                            <form name="login" class="form">
-                                <input type="email" name="email" placeholder="Email" class="input-box">
-                                <input type="password" name="password" placeholder="Password" class="input-box">
+                            <form name="login" class="form" onsubmit="return validatelogin(this)">
+                                <input type="email" name="email" placeholder="Email" onblur="isEmpty(this)" class="input-box form-input">
+                                <div id="errormessage"></div>
+                                <input type="password" name="password" onkeyup="validatepassword(this)" onclick="isPrevEmpty(this)" placeholder="Password" class="input-box form-input">
+                                <div id="errormessage"></div>
                                 <button class="btn">SIGN IN</button>
                                 <ul class="account-help">
                                     <li><a href="signup.html">Sign up</a></li>
@@ -157,5 +159,6 @@
 
         </div>
         <script type="text/javascript" src="js/accordian.js"></script>
+        <script type="text/javascript" src="js/validator.js"></script>
     </body>
 </html>

@@ -1,6 +1,6 @@
 @font-face{
 	src: url('../fonts/HelveticaNeue.ttf');
-	font-family: 'halvetica';
+	font-family: 'veena';
 }
 @font-face {
     font-family: 'helveticaneue';
@@ -27,7 +27,7 @@ ul,h1,h2,h3,p,li{
 body{
 	border-top: 5px solid #000;
 	line-height: 25px;
-	font-family: 'halvetica','helveticaneue',Arial,Geneva,sans-serif ;
+	font-family: 'veena','helveticaneue',Arial,Geneva,sans-serif ;
 }
 img{
 	max-width: 100%;
@@ -41,7 +41,7 @@ hr {
     padding: 0; 
 }
 .wrapper{
-	margin: 0 30px;
+	margin: 0 47px;
 }
 .clearfix:before,
 .clearfix:after{
@@ -67,6 +67,9 @@ a{
 }
 .pull-right{
 	float: right;
+}
+#errormessage{
+	color: #ff0000;
 }
 .input-box{
 	display: block;
@@ -108,7 +111,7 @@ a{
 	border: none;
 	background-color: #333;
 	padding: 8px 0px;
-	font-size: 10px;
+	font-size: 12px;
 }
 .add-to-cart-btn{
     padding: 7px 15px;
@@ -468,9 +471,7 @@ ul.paymentsprite li.discover{
 /*footer*/
 
 @media only screen and (min-width: 768px) {
-.wrapper{
-	margin: 0 45px;
-}
+
 .left-col{
 	float: left;
 	width: 25%;
