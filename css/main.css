@@ -1,9 +1,12 @@
 @font-face{
-	src: url('../fonts/HelveticaNeue.ttf');
+	src: uri('../fonts/HelveticaNeue.ttf');
 	font-family: 'halvetica';
 }
 *{
-	box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -o-box-sizing: border-box;
+    box-sizing: border-box;
 	color : #333;
 }
 ul,h1,h2,h3,p,li{
@@ -24,7 +27,7 @@ hr {
     height: 1px;
     border: 0;
     border-top: 1px solid #E8E8E8;
-    margin: 1em 0;
+    margin: 1px 0;
     padding: 0; 
 }
 .wrapper{
@@ -147,6 +150,9 @@ ul.account-activities>li>a{
 ul.user-activities>li>a{
 	display: none;
 }
+.cart-ico{
+	padding-right: 10px;
+}
 /*topnav*/
 
 /*search box*/
@@ -198,10 +204,14 @@ input.search-box{
 	max-height: 0px;
 	text-align: center;
 	overflow: hidden;
+    -webkit-transition: max-height 0.5s ease-out;
+    -moz-transition: max-height 0.5s ease-out;
+    -ms-transition: max-height 0.5s ease-out;
+    -o-transition: max-height 0.5s ease-out;
     transition: max-height 0.5s ease-out;
 }
 .fa-ico:before{
-	content: "\f0c9";
+	content: "	\f0c9";
 }
 .fa-ico.open:before{
 	content: "\f00d";
@@ -245,6 +255,10 @@ ul.cat-list {
     background-color: white;
     max-height: 0;
     overflow: hidden;
+    -webkit-transition: max-height 0.4s ease-out;
+    -moz-transition: max-height 0.4s ease-out;
+    -ms-transition: max-height 0.4s ease-out;
+    -o-transition: max-height 0.4s ease-out;
     transition: max-height 0.4s ease-out;
 }
 ul.cat-list li:not(:first-child){
@@ -314,7 +328,8 @@ ul.sociallinksprite li.youtube{
 	width: 100%;
 	padding: 10px 0px;
 }
-.form input{
+.form input,
+.form .btn{
 	width: 100%;
 	margin-bottom: 10px; 
 }
@@ -376,6 +391,7 @@ ul.account-help>li{
 
 /*footer*/
 footer{
+	display: block;
 	padding: 30px 0;
 }
 .footer-container{
@@ -388,7 +404,7 @@ footer{
 }
 .footer-container ul,
 .footer-container p{
-	padding: 10px 0px;
+	padding: 0;
 }
 
 
@@ -403,6 +419,10 @@ ul.paymentsprite{
 	margin : auto;
 	padding: 0;	
 	zoom: 0.5;
+	-ms-zoom: 0.5;
+	-webkit-zoom: 0.5;
+	-moz-transform:  scale(0.5,0.5);
+	-moz-transform-origin: right center;
 }
 ul.paymentsprite li {
 	background: url('../images/paymentsprite.png') no-repeat;
