@@ -7,14 +7,15 @@ var accordianExpand = function(accordian, accordianHeight){
 	var i;
 
 	for (i = 0; i < category.length; i++) {
-		
+
 	  category[i].onclick = function() {
-		console.log("clicked accordian");
 	    this.classList.toggle("active");
-	    var list = this.nextElementSibling;
+	    var list = this.childNodes[3];
 	    if (list.style.maxHeight){
+	    console.log("null");
 	      list.style.maxHeight = null;
 	    } else {
+	    console.log("maxheight");
 	      list.style.maxHeight = list.scrollHeight + "px";
 	      accordian.style.maxHeight = accordianHeight + list.scrollHeight + "px";
 	    } 
